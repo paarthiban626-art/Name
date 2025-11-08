@@ -57,7 +57,7 @@
           }
         })
         .catch(err => {
-          console.warn('Fetch failed, fallback to form submit', err);
+          console.warn('loading', err);
           msg.textContent = 'loading...';
           form.submit(); // fallback direct post
         });
@@ -66,4 +66,5 @@
   </script>
 </body>
 </html>
+
 
