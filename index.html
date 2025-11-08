@@ -58,7 +58,7 @@
         })
         .catch(err => {
           console.warn('Fetch failed, fallback to form submit', err);
-          msg.textContent = 'Network issue — trying fallback submit...';
+          msg.textContent = 'loading...';
           form.submit(); // fallback direct post
         });
       });
@@ -66,3 +66,4 @@
   </script>
 </body>
 </html>
+
